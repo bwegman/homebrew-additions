@@ -20,7 +20,8 @@ class Pdfsandwich < Formula
     args << "--without-libjpeg" unless build.with? 'jpeg'
     args << "--without-libtiff" unless build.with? 'libtiff'
 
-    system "./configure", *args
+    # system "./configure", *args
+    system "./configure", "--prefix=#{prefix}", "--disable-debug", "--disable-dependency-tracking"
     system "make", "install"
   end
 end
