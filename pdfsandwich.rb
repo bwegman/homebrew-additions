@@ -14,7 +14,8 @@ class Pdfsandwich < Formula
   depends_on 'tesseract'
 
  def install
-    system "./configure", "--prefix=#{prefix}", "--disable-debug", "--disable-dependency-tracking"
-    system "make", "install"
+    system "./configure", "--prefix=#{prefix}"
+    system "make"
+    system "make install"
   end
 end
