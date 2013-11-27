@@ -19,15 +19,6 @@ class ExactImage < Formula
   end
 
   def install
-    # args = ["--prefix=#{prefix}",
-    #         "--without-python",
-    #         "--without-perl",
-    #         "--without-php",
-    #         "--without-libungif"]
-    # args << "--without-libpng" unless build.with? 'libpng'
-    # args << "--without-libjpeg" unless build.with? 'jpeg'
-    # args << "--without-libtiff" unless build.with? 'libtiff'
-
     args = ["--prefix=#{prefix}",
             "--without-python",
             "--without-perl",
