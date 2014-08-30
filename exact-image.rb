@@ -3,7 +3,7 @@ require 'formula'
 class ExactImage < Formula
   homepage 'http://www.exactcode.de/site/open_source/exactimage/'
   url 'http://dl.exactcode.de/oss/exact-image/exact-image-0.8.7.tar.bz2'
-  sha1 'd68edb48df333d31b3f87723e487d1b3ee45fdbf'
+  sha1 '3381a796d8bd68b511f3ceb98e3c1cb8d9ce03aa'
 
   depends_on :x11
   depends_on 'freetype'
